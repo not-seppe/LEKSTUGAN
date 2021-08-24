@@ -2,7 +2,25 @@ using System;
 using Xunit;
 
 namespace LEKSTUGAN
+
 {
+
+    public class Methods
+    {
+        public static bool CanDrinkAlcohol(int age)
+        {
+            if (age > 18)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+    }
+
     public class UnitTest1
     {
         [Fact]
@@ -50,10 +68,12 @@ namespace LEKSTUGAN
 
         public void Test3()
         {
-            int bigNumber = 2147483647;
+            int bigNumber = 2147483646;
             int biggerNumber = bigNumber + 1;
             Assert.True(biggerNumber > bigNumber);
         }
+
+        [Fact]
 
         public void Test4()
         {
@@ -70,6 +90,15 @@ namespace LEKSTUGAN
             }
 
         }
+
+        [Fact]
+
+        public void Test5()
+        {
+            Assert.True(Methods.CanDrinkAlcohol(19));
+        }
+
+
 
     }
 }
