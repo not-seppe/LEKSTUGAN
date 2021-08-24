@@ -5,7 +5,7 @@ namespace LEKSTUGAN
 
 {
 
-    public class Methods // Metoder för testerna
+    public class Methods // Metoder fÃ¶r testern
     {
         public static bool CanDrinkAlcohol(int age)
         {
@@ -46,7 +46,7 @@ namespace LEKSTUGAN
             }
             else
             {
-                name = "Björn";
+                name = "BjÃ¶rn";
             }
         }
 
